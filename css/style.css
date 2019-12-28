@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#calculator {
+    width: 286px;
+    height: auto;
+    overflow: hidden;
+    margin: 100px auto;
+    padding: 90px 20px 9px;
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    border-radius: 3px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.top {
+    overflow: hidden;
+}
+
+.screen {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.reset {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 0 11px 0;
+    color: #ccc;
+    line-height: 56px;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.keys span {
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    width: 66px;
+    height: 56px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color: #ccc;
+    line-height: 56px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.keys span.operator {
+    background: rgba(250,100,0,0.3);
+    margin-right: 0;
+}
+
+.keys span:hover, .reset:hover {
+    background: rgba(255,255,255,0.8);
+    color: #333;
+}
+
+.keys span:active, .reset:active {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+    top: 4px;
+}
+
+.keys span.eval:hover {
+    background: #abb850;
+    color: #ffffff;
+}
